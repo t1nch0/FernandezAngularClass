@@ -1,0 +1,15 @@
+<p>prueba2 works!</p>
+
+<h4>PRACTICA WIII</h4>
+
+<ul *ngFor="let person of person" [ngSwitch]="person.country" appDirectivapract>
+
+    <li *ngSwitchCase="'UK'" style=color:red>{{ person.name }} ({{ person.country }})
+    </li>
+    <li *ngSwitchCase="'USA'" style=color:green>{{ person.name }} ({{ person.country }})
+    </li>
+    <li *ngSwitchCase="'HK'">{{ person.name }} ({{ person.country }})
+    </li>
+    <li *ngSwitchDefault>{{ person.name }} ({{ person.country }})
+    </li>
+</ul>
